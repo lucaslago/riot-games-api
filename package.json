@@ -1,0 +1,22 @@
+{
+  "name": "riot-champion-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas Lago",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "test": "ava",
+    "ci": "yarn lint && yarn test",
+    "lint": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucaslago/riot-champion-api"
+  }
+}
+
