@@ -1,22 +1,23 @@
 {
-  "name": "riot-champion-api",
+  "name": "riot-games",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Lucas Lago",
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.19.1",
+    "rollup": "^0.41.6",
     "standard": "^10.0.2"
   },
   "scripts": {
-    "test": "ava",
+    "build": "rollup -c",
+    "test": "yarn build && ava",
     "ci": "yarn lint && yarn test",
-    "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint": "standard ./lib",
+    "lint:fix": "standard ./lib --fix"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucaslago/riot-champion-api"
+    "url": "https://github.com/lucaslago/riot-games-api"
   }
 }
-
